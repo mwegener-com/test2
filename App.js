@@ -4,11 +4,11 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {
 	return (
-		// <SafeAreaProvider>
-		<View style={styles.container}>
-			<Text>Open up App.js to start working on your app!</Text>
-		</View>
-		// </SafeAreaProvider>
+		<SafeAreaProvider>
+			<View style={styles.container}>
+				<Text>Open up App.js to start working on your app!</Text>
+			</View>
+		</SafeAreaProvider>
 	);
 }
 

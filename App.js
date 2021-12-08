@@ -1,14 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import MyText from './MyText';
 
 export default function App() {
 	return (
-		<SafeAreaProvider>
+		// <SafeAreaProvider>
+		<SafeAreaView style={{ flex: 1 }}>
 			<View style={styles.container}>
-				<Text>Open up App.js to start working on your app!</Text>
+				<MyText />
 			</View>
-		</SafeAreaProvider>
+		</SafeAreaView>
+		// </SafeAreaProvider>
 	);
 }
 

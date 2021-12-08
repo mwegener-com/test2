@@ -1,24 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import MyText from './MyText';
 
 export default function App() {
 	return (
-		// <SafeAreaProvider>
-		<SafeAreaView style={{ flex: 1 }}>
+		<SafeAreaProvider>
 			<View style={styles.container}>
 				<MyText />
 			</View>
-		</SafeAreaView>
-		// </SafeAreaProvider>
+		</SafeAreaProvider>
 	);
 }
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#fff',
+		backgroundColor: 'yellow',
 		alignItems: 'center',
 		justifyContent: 'center',
 	},
